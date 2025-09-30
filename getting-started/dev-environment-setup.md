@@ -16,6 +16,6 @@ description: Essential software
   a low level and general purpose MAVLink message processing library.
 
 ## Source code management
-* [Github Desktop](https://desktop.github.com/download/)
-* [MX Motion IMU repo](https://github.com/leelili444/IMU)
+* install [Github Desktop](https://desktop.github.com/download/)
+* download code from [MX Motion IMU repo](https://github.com/leelili444/IMU)
   
