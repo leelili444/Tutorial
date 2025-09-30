@@ -1,2 +1,22 @@
 # Outline
 
+# Table of contents
+
+* [Outline](README.md)
+* [Getting Started](getting-started/README.md)
+  * [Hardware specification](getting-started/hardware-specification.md)
+  * [Dev environment setup](getting-started/dev-environment-setup.md)
+  * [Building the code](getting-started/building-the-code.md)
+  * [MX Motion GUI](getting-started/mx-motion-gui.md)
+* [Build project from scratch](build-project-from-scratch/README.md)
+  * [Start with stm32CubeIDE](build-project-from-scratch/start-with-stm32cubeide.md)
+  * [First task with FreeRTOS](build-project-from-scratch/first-task-with-freertos.md)
+* [IMU data collection](imu-data-collection/README.md)
+  * [Sensor Initialization](imu-data-collection/sensor-initialization.md)
+  * [Data  receiving](imu-data-collection/data-receiving.md)
+* [IMU data processing](imu-data-processing/README.md)
+  * [Basic of IMU data](imu-data-processing/basic-of-imu-data.md)
+  * [Madgwick filter](imu-data-processing/madgwick-filter.md)
+* [MAVLink integration](mavlink-integration/README.md)
+  * [Sending messages](mavlink-integration/sending-messages.md)
+  * [Parameters tunning](mavlink-integration/parameters-tunning.md)

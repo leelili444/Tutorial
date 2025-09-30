@@ -4,11 +4,11 @@ description: Setup and code structure.
 
 # MX Motion GUI
 ## Main feature
-* **Real-time data monitor**
+* **Real-time data monitor**  
   Receiving MAVLink messages sent from IMU, such as heartbeat, attitude or raw imu data.
-* **Data logging**
+* **Data logging**  
   Data will be saved into csv file with 500Hz.  The frequency is hardcoded in the GUI source code.
-* **Online parameter tunning**
+* **Online parameter tunning**  
   Receiving and updating parameters in the IMU. The selection of filter algorithms and filters tunning will be conducted via online parameters from GUI.
 
 ## Build and start GUI
