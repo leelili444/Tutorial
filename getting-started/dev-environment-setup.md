@@ -7,6 +7,14 @@ description: Essential software
 ## STM32 board devleopment 
 * [STM32CubeIDE Version: 1.19.0](https://www.st.com/en/development-tools/stm32cubeide.html)
 * [STM32CubeMX  Version: 6.15.0](https://www.st.com/content/st_com/en/stm32cubemx.html)
+* **Install software packages for STM32F4**  
+  ST has created STM32Cube MCU packages for different series of STM32 processors.  The package is MCU specific and contains all the low-level files, which are HAL (Hardware Abstraction Layer) APIs, LL (Low-layer) APIs, ARM Cortex-M CMSIS files, BSP (Board Support Package) files, additional utilities and drivers. User can also deploy FreeRTOS in the project.
+  
+  MX Motion IMU uses the STM32F405 processor, so after the installation of STM32CUbeIDE, the STM32CubeF4 MCU package is also needed.  Go to Help->STM32Cube Updates->connection to myST, and enter your password to login with ST account.  Then go to Help->Configuration Tool->Manage Embedded Software Packages. A new window with title ‘Embedded Software Packages Manager’ will popup.
+  
+  Select the ‘STM32Cube MCU Packages’ tab in the top, and find the ‘STM32F4’ series.
+  The latest version is 1.28.3.
+  ![Embedded Software Packages Manager](image-4.png)
 ## Python environment
 * [Anaconda3-2025.06-0-Windows-x86_64](https://www.anaconda.com/blog/new-release-anaconda-distribution-2025-06)
 * PyCharm comes along with Anaconda3. Using PyCharm, the following libraries need to install:
