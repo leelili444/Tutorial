@@ -18,7 +18,8 @@ The first tab in the Device Configureation tool is the 'Pin out and configuratio
 ![Device configuration tool](image-2.png)
 ### Clock configuration
 There is a external clock in the form of a 16MHz crystal oscillator on the IMU board, which is a  
-connected across pin5 and pin6, which are the input pin and output pin of external oscillator.
+connected across pin5 and pin6, which are the input pin and output pin of external oscillator.  
+
 ![connection Between the Crystal Oscillator and Processor](image-3.png)
 ![OSC_in and OSC_out](image-4.png)
 * RCC Mode and Configuration
@@ -54,7 +55,7 @@ MX Motion IMU uses Stlink for code debugging.Enable SWD as follows:
   ![SWD configuration](image-10.png)
 
 ### Enable FreeRTOS
-* From the left, click FreeRTOS under 'Middleware and Software' and select CMSIS_V2 to enable FreeRTOS.
+* From the left, click FreeRTOS under 'Middleware and Software' and select CMSIS_V2 to enable FreeRTOS.  
 ![Enalble FreeRTOS](image-11.png)
 * The IDE will pop up a window to remind you to set the Newlib：
   ![Newlib setting](image-12.png)
