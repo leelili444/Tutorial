@@ -7,7 +7,7 @@
 | **Bus Communication** | U6 | **TJA1051T/3** | High-speed **CAN Bus Transceiver**, used for industrial/vehicular network communication. |
 | **Non-Volatile Memory** | U4 | **AT24C256** | 256 Kbit **EEPROM**, used for storing configuration parameters and calibration data. |
 | **Power Management** | U1 | **LD39150DT33-R** | **LDO Regulator**, provides a stable **3.3V** supply for the digital circuitry. |
-| **Clock Source** | Y200 | **12 MHz Crystal** | **External Clock Source** for the MCU, providing high-precision timing for the system and peripherals. |
+| **Clock Source** | Y200 | **16 MHz Crystal** | **External Clock Source** for the MCU, providing high-precision timing for the system and peripherals. |
 
 ## Online manuals
 We mainly need the following manuals:
