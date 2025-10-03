@@ -65,7 +65,7 @@ MX Motion IMU uses Stlink for code debugging.Enable SWD as follows:
   ![Default task](image-13.png)
 
 ### Code Generation
-Press 'ctrl + S' to save the 'Device Configuration Tool', and the IDE will start to generate the code. The project explorer looks like:
+Press 'ctrl + S' to save the 'Device Configuration Tool', and the IDE will start to generate the code. The project explorer looks like:  
 ![Generated code](image-14.png)
 
 We will look into the code more next time and build the first FreeRTOS task for IMU board.
