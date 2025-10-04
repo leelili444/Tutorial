@@ -55,7 +55,7 @@ MX Motion IMU uses Stlink for code debugging.Enable SWD as follows:
 * As soon as you do this, the PA13 and PA14 pins will be set as SWDIO and SWCLK.  
   ![SWD configuration](image-10.png)
 
-### Enable FreeRTOS
+## Enable FreeRTOS
 * From the left, click FreeRTOS under 'Middleware and Software' and select CMSIS_V2 to enable FreeRTOS.    
 ![Enalble FreeRTOS](image-11.png)
 * The IDE will pop up a window to remind you to set the Newlib：
@@ -64,7 +64,7 @@ MX Motion IMU uses Stlink for code debugging.Enable SWD as follows:
   There is a default task. We will use it to run the LED blinking.
   ![Default task](image-13.png)
 
-### Code Generation
+## Code Generation
 Press 'ctrl + S' to save the 'Device Configuration Tool', and the IDE will start to generate the code. The project explorer looks like:  
 ![Generated code](image-14.png)
 
