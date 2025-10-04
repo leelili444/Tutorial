@@ -35,7 +35,7 @@ Whether you're an **engineer, student, or seasoned maker**, you've faced the sam
 * **Black Box Design:** Critical **hardware design files were missing**, preventing deep understanding of the underlying principles and making it impossible to **customize or repurpose** the design.
 * **Coupled Code:** The software was **not clean or focused**, forcing hours of wasted time stripping out irrelevant functions instead of focusing on **application innovation**.
 
-I was tired of this inefficient cycle of reinventing the wheel. Since a **clean, complete, and purely IMU-focused** platform didn't exist, I built it for all fellow technical enthusiasts who crave **efficiency and depth**. (Shown as below)👇
+I was tired of this inefficient cycle of reinventing the wheel. Since a **clean, complete, and purely IMU-focused** platform didn't exist, I built it for all fellow technical enthusiasts who crave **efficiency and depth**. (The IMU is shown as below)👇  
 ![MX Motion MX](kickstarter_photo.jpg)
 
 ---
