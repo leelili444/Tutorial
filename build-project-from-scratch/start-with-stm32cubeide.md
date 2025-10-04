@@ -26,7 +26,7 @@ connected across pin5 and pin6, which are the input pin and output pin of extern
   * In the Device Configuration Tool, expand the 'System Core' section and choose the 'RCC' (Reset and Clock Controller) peripheral.
   * In the active 'Mode' panel, change the HSE (High-Speed Clock) setting to Crystal/Ceramic Resonator.
   * It will enable and label the two oscillator pins as RCC_OSC_IN and RCC_OSC_OUT.  
-![Set HSE to Crystal/Ceramic option](image-5.png)
+![Set HSE to Crystal/Ceramic option](image-15.png)
 * Clock Tree Configuration
   By default it still uses the HSI (High-speed Internal) as the main clock source, unless we customize the clock in the tab 'Clock Configuration' on the top.
   * Set the HCLK and PLL Source
@@ -47,6 +47,12 @@ connected across pin5 and pin6, which are the input pin and output pin of extern
 ### GPIO Configuration
 Two red LEDs are connected to PB4 and PB5 pins.  Go to the 'Pinout & Configuration' tab and click on the 'PB4' pin and set it as 'GPIO_Output' to drive the LED. Do the same setting to PB5 pin. Then Click the GPIO section on the left side under 'System Core' and you can find the two pins are list in a table. There you can assign meaningful user lable to the pins seperately.
 ![Set GPIO for LEDs](image-9.png)
+
+When the project code is generated, these two pins will be defined in 'main.h' as below.
+| User Label | Pin | Port Definition | Pin Definition |
+| :---: | :---: | :---: | :---: |
+| **LED1** | PB4 | `LED1_GPIO_Port` (which is GPIOB) | **`Status_LED_1_Pin`** (which is GPIO_PIN_4) |
+| **LED2** | PB5 | `LED2_GPIO_Port` (which is GPIOB) | **`Status_LED_2_Pin`** (which is GPIO_PIN_5) |
 
 ### SWD Configuration
 MX Motion IMU uses Stlink for code debugging.Enable SWD as follows: 
