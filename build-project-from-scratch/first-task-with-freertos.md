@@ -16,8 +16,8 @@ The GPIO pins connected to the two LEDs have been defined as:
 
 | User Label | Pin | Port Definition | Pin Definition |
 | :---: | :---: | :---: | :---: |
-| **Status\_LED\_1** | PB4 | `Status_LED_1_GPIO_Port` (GPIOB) | **`Status_LED_1_Pin`** ($\text{GPIO\_PIN\_4}$) |
-| **Status\_LED\_2** | PB5 | `Status_LED_2_GPIO_Port` (GPIOB) | **`Status_LED_2_Pin`** ($\text{GPIO\_PIN\_5}$) |
+| **Status_LED_1** | PB4 | `Status_LED_1_GPIO_Port` (GPIOB) | **`Status_LED_1_Pin`** (GPIO_PIN_4) |
+| **Status_LED_2** | PB5 | `Status_LED_2_GPIO_Port` (GPIOB) | **`Status_LED_2_Pin`** (GPIO_PIN_5) |
 
 
 ## Understanding the FreeRTOS Task Execution Flow
@@ -46,15 +46,15 @@ void StartDefaultTask(void *argument)
 ~~~
 4. **osDelay()**   
    When the task executes **`osDelay(500)`**:
-    * The task is immediately moved from the **Running** state to the **Blocked** state for $500$ milliseconds.
-    * The **CPU is not halted**. The scheduler yields the $\text{CPU}$, checking for any other tasks to run. If there are none, the $\text{CPU}$ enters a low-power **Idle** state.
-    * After $500$ milliseconds, the task is moved back to the **Ready** state, and the scheduler allows the $\text{CPU}$ to resume execution from the line immediately following the `osDelay(500)` call.
+    * The task is immediately moved from the **Running** state to the **Blocked** state for 500 milliseconds.
+    * The **CPU is not halted**. The scheduler yields the CPU, checking for any other tasks to run. If there are none, the CPU enters a low-power **Idle** state.
+    * After 500 milliseconds, the task is moved back to the **Ready** state, and the scheduler allows the CPU to resume execution from the line immediately following the `osDelay(500)` call.
 
-This non-blocking delay is crucial for $\text{RTOS}$, ensuring the $\text{CPU}$ isn't wasted while a task waits for time to pass.
+This non-blocking delay is crucial for RTOS, ensuring the CPU isn't wasted while a task waits for time to pass.
 
 ## Step 3: Implement the Alternating Blink Logic
 
-The **`StartDefaultTask`** function is in `main.c`, and place the following logic inside its infinite $\mathbf{for (;;)}$ loop. Contents within the $\text{USER CODE BEGIN/END}$ sections will not change when you generate the code more times.
+The **`StartDefaultTask`** function is in `main.c`, and place the following logic inside its infinite for (;;) loop. Contents within the USER CODE BEGIN and END sections will not change when you generate the code more times.
 
 
 ~~~
@@ -100,12 +100,12 @@ void StartDefaultTask(void *argument)
 This final step transfers your compiled FreeRTOS application onto the STM32 microcontroller.
 
 1.  **Save** all files in your project.
-2.  **Build** your project by clicking the **Project** menu $\rightarrow$ **Build Project** (or use the hammer icon in the toolbar).
+2.  **Build** your project by clicking the **Project** menu -> **Build Project** (or use the hammer icon in the toolbar).
     * _Wait for the build process to complete successfully without errors._
-3.  **Flash** the compiled code to your STM32 development board by clicking the **Run** menu $\rightarrow$ **Run** or **Debug** (for flashing and starting execution). ST-Link needs to be connected. IDE will detect the ST-Link and set up for you.
+3.  **Flash** the compiled code to your STM32 development board by clicking the **Run** menu -> **Run** or **Debug** (for flashing and starting execution). ST-Link needs to be connected. IDE will detect the ST-Link and set up for you.
 
 ![Download successfully](image-16.png)
 
-Upon successful flashing, your two LEDs (on PB4 and PB5) will immediately begin alternating their state every $\mathbf{500}$ **milliseconds**, achieving the desired **1-second cycle**, confirming the `defaultTask` is running correctly.
+Upon successful flashing, your two LEDs (on PB4 and PB5) will immediately begin alternating their state every 500 **milliseconds**, achieving the desired **1-second cycle**, confirming the `defaultTask` is running correctly.
 
 Next time we will set up timers and run periodically with predefined frequency.
