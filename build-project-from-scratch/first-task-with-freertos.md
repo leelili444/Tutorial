@@ -1,6 +1,8 @@
 # First task with FreeRTOS
 
-When we enable the FreeRTOS, CMSIS-RTOS V2 is set. Its full name is 'Cortex Microcontroller Software Interface Standard - Real-Time Operating System, Version 2'. It is a standardized API (Application Programming Interface) defined by ARM to provide a vendor-independent abstraction layer for RTOS kernels running on Cortex-M microcontrollers (like the STM32).
+When we enable the FreeRTOS, CMSIS-RTOS V2 is set. Its full name is 'Cortex Microcontroller Software Interface Standard - Real-Time Operating System, Version 2'.
+
+It is a standardized API (Application Programming Interface) defined by ARM to provide a vendor-independent abstraction layer for RTOS kernels running on Cortex-M microcontrollers (like the STM32).
 
 ## Two-LED Alternating Blinking with FreeRTOS
 
