@@ -24,7 +24,6 @@ Open **STM32CubeMX** by double-clicking the project’s **`.ioc`** file (for exa
 | I2C1_SCL  | PB8 | Serial Clock Line |
 | I2C1_SDA  | PB9 | Serial Data Line |
 
----
 
 ### Enable and Configure I²C1
 
@@ -39,7 +38,8 @@ Open **STM32CubeMX** by double-clicking the project’s **`.ioc`** file (for exa
 The yellow warning beside I2C1 appears because the SMBA pin of I2C1 has been configured as a GPIO output (used to drive an LED), which causes a potential functional conflict. However, since we are using I2C mode, the SMBA pin does not need to be configured.
 
 Note: The SMBA (System Management Bus Alert) pin is an optional signal used in SMBus communication to allow slave devices to notify the host controller of abnormal conditions, such as faults, errors, or status changes. In standard I2C applications, this pin is typically unused.
----
+
+
 
 ## Wrap-up
 
