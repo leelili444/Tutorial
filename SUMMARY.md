@@ -17,6 +17,3 @@
 * [MAVLink integration](mavlink-integration/README.md)
   * [Sending messages](mavlink-integration/sending-messages.md)
   * [Parameters tunning](mavlink-integration/parameters-tunning.md)
-* [README](readme-1.md)
-* [i2c configuration](i2c-configuration.md)
-* [How\_to\_Test\_AT24C256\_EEPROM\_via\_I2C\_on\_STM32](how_to_test_at24c256_eeprom_via_i2c_on_stm32.md)
