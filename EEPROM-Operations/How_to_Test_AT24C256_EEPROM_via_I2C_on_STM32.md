@@ -12,17 +12,9 @@ The **AT24C256** EEPROM uses a **7-bit I²C address**, and its value depends on 
 
 ---
 
-## 📘 Address Table
-
-| A2 | A1 | A0 | 7-bit Address | 8-bit Write Addr | 8-bit Read Addr |
-|----|----|----|----------------|------------------|-----------------|
-| 0  | 0  | 0  | `0x50`         | `0xA0`           | `0xA1`          |
-| 0  | 0  | 1  | `0x51`         | `0xA2`           | `0xA3`          |
-| 0  | 1  | 0  | `0x52`         | `0xA4`           | `0xA5`          |
-| …  | …  | …  | …              | …                | …               |
-
-- The **7-bit address range** is `0x50`–`0x57`.
-- The **8-bit address range** (old datasheet format) is `0xA0`–`0xAE`.
+| A2 | A1 | A0 | 7-bit Address | 8-bit Addr | 
+|----|----|----|----------------|------------------|
+| 0  | 0  | 0  | `0x50`         | `0xA0`           | 
 
 ---
 
