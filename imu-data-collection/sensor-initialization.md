@@ -224,7 +224,7 @@ It will confirm the following functionalities are normal:
 
 If the function returns the expected ID 0x47, the connection is verified and the IMU is ready for initialization.
 
-```
+
 ### Add function to Initialize the IMU
 #### **1. Select Register Bank 0**
 - **Action:** Write to `REG_BANK_SEL` with (`ICM42688P_REG_BANK0_REG_BANK_SEL`).
@@ -253,7 +253,6 @@ If the function returns the expected ID 0x47, the connection is verified and the
 - **Action:** `HAL_Delay(1000);`
 - **Purpose:** Ensures the sensor is fully ready before further register configuration.
 
----
 ```
 void ICM42688P_Init(void)
 {
