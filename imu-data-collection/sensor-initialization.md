@@ -226,45 +226,21 @@ If the function returns the expected ID 0x47, the connection is verified and the
 
 
 ### Add function to Initialize the IMU
-#### **1. Select Register Bank 0**
+`ICM42688P_Init` function is called in the default task once before the for loop. And define the global variable `who_am_i` for debugging.
+#### **Select Register Bank 0**
 - **Action:** Write to `REG_BANK_SEL` with (`ICM42688P_REG_BANK0_REG_BANK_SEL`).
 - **Purpose:** The ICM-42688-P uses a *banked register system*; selecting **Bank 0** ensures correct access to core registers.
 
-#### **2. Power-Up Delay**
-- **Action:** `HAL_Delay(50);`
-- **Purpose:** Allow time for the IMU to stabilize after power-on.
 
-#### **3. Reconfirm Bank 0 Selection**
-- **Action:** Write to `REG_BANK_SEL` again (`ICM42688P_REG_BANK0_REG_BANK_SEL`).
-- **Purpose:** Prevents misconfiguration if the device was in another bank before initialization.
-
-#### **4. Soft Reset**
-- **Action:** Write `BIT0` (`0x01`) to `DEVICE_CONFIG`.
-- **Purpose:** Resets the IMU, restoring all registers to default values.
-- **Delay:** Wait 500 ms for reset completion.
-
-#### **5. Verify WHO_AM_I Register**
-- **Action:** Read from `WHO_AM_I` (address `0x75`).
+#### **Verify WHO_AM_I Register**
+- **Action:** Read from `WHO_AM_I` (address `0x75`) which is in Bank 0.
 - **Expected Value:** `0x47` for the ICM-42688-P.
 - **Error Handling:**  
   If the value doesn’t match, enter an infinite loop blinking LEDs to indicate SPI communication failure.
 
-#### **6. Stabilization Delay**
-- **Action:** `HAL_Delay(1000);`
-- **Purpose:** Ensures the sensor is fully ready before further register configuration.
-
 ```
 void ICM42688P_Init(void)
 {
-
-    /*-----------------------------------------------------------
-     * Step 0: Ensure we are operating in Register Bank 0.
-     * ----------------------------------------------------------
-     * The ICM-42688-P uses a "banked register" architecture.
-     * Writing 0x00 to register 0x76 selects Bank 0.
-     */
-    ICM42688P_WriteReg(ICM42688P_REG_BANK0_REG_BANK_SEL, ICM42688P_REG_BANK_SEL_0);
-
 
     /* Wait for sensor to power up (recommended after power-on). */
     HAL_Delay(50);
@@ -273,16 +249,7 @@ void ICM42688P_Init(void)
     ICM42688P_WriteReg(ICM42688P_REG_BANK0_REG_BANK_SEL, ICM42688P_REG_BANK_SEL_0);
 
     /*-----------------------------------------------------------
-     * Step 1: Soft Reset
-     * ----------------------------------------------------------
-     * A soft reset ensures the device starts from a clean, known state.
-     * After reset, all registers return to default values.
-     */
-    ICM42688P_WriteReg(ICM42688P_REG_BANK0_DEVICE_CONFIG, BIT0);
-    HAL_Delay(500);  // Allow sufficient time for reset to complete
-
-    /*-----------------------------------------------------------
-     * Step 2: Verify Communication (Read WHO_AM_I)
+     * Verify Communication (Read WHO_AM_I)
      * ----------------------------------------------------------
      * The WHO_AM_I register (0x75) should return 0x47 for ICM-42688-P.
      * If not, stay in an error loop and blink LEDs for debugging.
@@ -302,22 +269,11 @@ void ICM42688P_Init(void)
 }
 
 ```
-
-### Check ID in main.c before the while loop
-Define global variable uint8_t imu_id = 0;
-Using the Live expression window to check the value of imu_id
-```
-    imu_id = ICM42688P_ReadDeviceID();
-
-    if (imu_id == ICM42688P_DEVICE_ID)
-    {
-        // Proceed with IMU initialization
-    }
-    else
-    {
-        // Handle communication error
-    }
-```
+The definitions of different register address of ICM42688P should be given in headfile `ICM42688P.h`.  The obtained device id when running `ICM42688P_Init` is `ox47` as below. THe format of displayed variable can be set to hex by clicking the tiny vertical three dots on the top of the Live Expression.  
+![Change the value format](image/sensor-initialization/1760001296404.png)
+![Device ID](image/sensor-initialization/1760000411507.png) 
 
 ## Wrap up
-Next time, we will disucss more about the sensor configuration and details in the above initialization function.
+Next time, we will disucss more about the sensor configuration and details in the above initialization function. 
+
+After we finish all the initialization, the project so far will be accessed on our repo.
