@@ -22,7 +22,7 @@ According to the **ICM-42688-P datasheet**, the IMU supports the following SPI m
 - **Mode 0:** CPOL = 0, CPHA = 0  
 - **Mode 3:** CPOL = 1, CPHA = 1  
 
-![Configuration of SPI modes](image/sensor-initialization/1759982273486.png)
+![Configuration of SPI modes](image/sensor-initialization/1759982273486.png)  
 In practical applications, either mode can be used.  If the IMU does not specify a strict requirement, **Mode 3 (CPOL = 1, CPHA = 1)** is widely used and stable across the InvenSense/TDK sensor series.
 
 
@@ -44,7 +44,7 @@ we have five GPIOs need to set, **CubeMX** has set three of them:
 CS and INIT pins are left to us.
 CS Pin is labeled with `GYRO_CS` which is PC4 pin. Configure it as a regular GPIO output, and ensure that the software can manually pull it low and high.
 
-INT Pin is labeled with 'GYRO_INI1' which is PB0. Configure it as an external interrupt (EXTI) to efficiently handle data-ready notifications.
+INT Pin is labeled with 'GYRO_INI1' which is PB0. Configure it as an external interrupt (EXTI) to efficiently handle data-ready notifications.  
 ![Five pins connected to STM32](image/sensor-initialization/1759983297843.png)
 ![GPIO lists so far](image/sensor-initialization/1759984504869.png)
 
