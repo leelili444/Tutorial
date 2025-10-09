@@ -50,7 +50,7 @@ MX Motion shall not be liable for any damages arising from the use or inability 
 
 
 
-### Summary (for human readers)
+### Summary
 
 ✅ You may use, study, and share the project for **non-commercial** purposes.  
 📘 You **must include attribution** (GitHub or GitBook link) when reusing content.  
