@@ -13,6 +13,7 @@
   * [EEPROM Test via I2C](EEPROM-Operations/How_to_Test_AT24C256_EEPROM_via_I2C_on_STM32.md)
 * [IMU data collection](imu-data-collection/README.md)
   * [Sensor Initialization](imu-data-collection/sensor-initialization.md)
+  * [Sensor Configuration](imu-data-collection/sensor-configuration.md)
   * [Data receiving](imu-data-collection/data-receiving.md)
 * [IMU data processing](imu-data-processing/README.md)
   * [Basic of IMU data](imu-data-processing/basic-of-imu-data.md)

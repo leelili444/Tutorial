@@ -1,0 +1,5 @@
+Updates in V2.0
+
+# CAN interface
+CAN1_RX     PA11  PB5 PB12
+CAN1_TX     PA12  PB6 PB13
