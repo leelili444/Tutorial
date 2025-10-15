@@ -62,7 +62,8 @@ The core objective when setting the FSR is to select the **smallest possible ran
 ## ICM-42688-P Setting Analysis 
 
 ### Sensor Specifications of Micropilot MP2128HELI3 UAV Autopilot
-The easier way to configure the range is to take a comercial product on the market as a reference.  For example, We will analyze the setting of the ICM-42688-P's ranges by referencing the high-performance requirements of a UAV autopilot like the **Micropilot MP2128HELI3 UAV Autopilot** (Max Rate: 450 DPS, Max Accel: 32g).  
+The easier way to configure the range is to take a comercial product on the market as a reference.  For example, We will analyze the setting of the ICM-42688-P's ranges by referencing the high-performance requirements of a UAV autopilot like the **Micropilot MP2128HELI3 UAV Autopilot** (Max Rate: 450 DPS, Max Accel: 32g).   
+
 ![Sensor speicifications of Micropilot MP2128HELI3](image/sensor-configuration/1760425595930.png)  
 
 The need for 32g or higher ranges in high-performance UAVs is generally for measuring high-frequency, high-G vibration peaks and instantaneous acceleration during non-damaging hard landings or severe turbulence. The sensor must be able to measure and filter these momentary peaks.
