@@ -156,7 +156,9 @@ We put the function ICM42688P_GetData in the defualt task and can observe the da
 
 **HAL_GPIO_EXTI_Callbackis** a weakly defined callback in the HAL library that handles external interrupt events. Because it's weak, we can implement a strong version of the function to process the interrupt without explicit declaration. This function serves as the interrupt handler: when an interrupt is detected from the IMU, the associated function for reading IMU data will be called.  
 
-However, before using the interrupt mode to acquire raw data from the IMU, we must first configure the corresponding INT1 pin which is connected with the pin PB0 on the F405 processor. PB0 should be configured to 'External Interrupt Mode with Rising edge trigger detection'. And don't forget to enable 'EXT1 line0 interrupt' in the section'NVIC Mode and Configuration'. The NVIC is a key component of the ARM CortexM core, and it is responsible for efficiently managing and handling all interrupt requests.
+However, before using the interrupt mode to acquire raw data from the IMU, we must first configure the corresponding INT1 pin which is connected with the pin PB0 on the F405 processor. 
+- PB0 should be configured to 'External Interrupt Mode with Rising edge trigger detection'. 
+- And don't forget to enable 'EXT1 line0 interrupt' in the section'NVIC Mode and Configuration'. The NVIC is a key component of the ARM CortexM core, and it is responsible for efficiently managing and handling all interrupt requests.
 
 ![PB0 configuration](image/data-receiving/1760836516301.png)
 ![Enable EXTI Line0 Interrupt](image/data-receiving/1760851453083.png)
