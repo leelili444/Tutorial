@@ -1,5 +1,19 @@
 Updates in V2.0
 
 # CAN interface
-CAN1_RX     PA11  PB5 PB12
-CAN1_TX     PA12  PB6 PB13
+CAN2_RX     PB12  
+CAN2_TX     PB13
+
+# PWMs
+PA8-PA11   TIM4: CH1-CH4 
+
+# ST link  SWO
+SWO  PB3  
+
+# UART4
+UART4 RX     PC11  
+UART4 TX     PC10  
+
+# 
+
+![1760777355446](image/ToDolist/1760777355446.png)
