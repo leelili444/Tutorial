@@ -14,8 +14,6 @@ My way to use this code is to add the whole 'Icm426xxDefs.h' and include it in m
 #define ICM42688P
 // ...existing code...
 ```
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
 
 # Coding to Get and Decode Data  
 Here we recall the diagram below and start to work on the application functions like ICM42688P_Init(), ICM42688P_GetData(), etc.
