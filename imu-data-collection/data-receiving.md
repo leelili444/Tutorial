@@ -7,13 +7,15 @@ Compared with previous imu initiliaztion demo, we need complete definitions for 
 
 You can find the software called '**DK-42688-P SmartMotion eMD**' on this [link](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-42688-p/).  The headfile 'Icm426xxDefs.h' has the complete register definitions for the IMU, which relative path is 'smartmotion-dkexamples-atmel-cm4-fpu-2.0.9\sources\Invn\Drivers\Icm426xx'.
 
-My way to use this code is to add the whole 'Icm426xxDefs.h' and include it in my headfile 'ICM42688P.h'. Before doing this, we need add a line of code to clarify we are using ICM42699P, because the 'Icm426xxDefs.h' is coded for all the icm426xx variants.
+My way to use this code is to add the whole 'Icm426xxDefs.h' and include it in my headfile 'ICM42688P.h'. Before doing this, we need add a line of code to clarify we are using ICM42688P, because the 'Icm426xxDefs.h' is coded for all the icm426xx variants.
 ```
 // ...existing code...
 #include <stdint.h>
 #define ICM42688P
 // ...existing code...
 ```
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
 
 # Coding to Get and Decode Data  
 Here we recall the diagram below and start to work on the application functions like ICM42688P_Init(), ICM42688P_GetData(), etc.
