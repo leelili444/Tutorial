@@ -14,7 +14,7 @@ Add a serial link in Qgroundstation and connect the IMU module via a serial-usb 
 We can see the update frequency is degraded to around 100Hz.  I have not investigated this deeply, while it is potentially relevant with internal configuration of Qgroundstation.  Although, Qgroundstation is a convinent tool to check the mavlink from the serial interface.
 
 
-## Deconde mavlink messages and publish the ROS2 message
+## Decode mavlink messages and publish the ROS2 message
 Basically the meaningful data can be filtered out by the following code and the data in the ATTITUDE message will be decoded and passed to 'msg' which includes the roll, pitch and yaw angles.
 ```
 msg = self.master.recv_match(type=['ATTITUDE'], blocking=False)
