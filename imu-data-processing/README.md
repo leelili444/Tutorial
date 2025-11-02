@@ -1,7 +1,5 @@
 # IMU data processing
 
-<<<<<<< HEAD
-=======
 In this section, we will show the attitude of IMU are converted to ROS2 messages.
 
 ## Mavlink messages displayed in Qgroundstation
@@ -34,4 +32,3 @@ The above conversion from Mavlink to ROS2 shows the advantage of sending out dat
 If you are interested with this part. Feel free to contact with me and I am glad to discuss more with you.
 
  
->>>>>>> e2a8885 (update)
