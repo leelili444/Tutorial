@@ -17,6 +17,19 @@ This guide provides the essential documentation required to:
 | **Get Files** | 👉 Visit our **[GitHub Repo](https://github.com/leelili444/IMU)** (All open-source hardware and software files) |
 | **Start Learning** | 👉 Visit our **[Tutorial Documentation](https://mx-motion.gitbook.io/tutorial)** (Latest technical guides) |
 
+# Great news! 
+**Hakuna Matata!  The next version of our IMU, the Pumbaa V2.0 is coming soon!**  
+The next version of our IMU, the Pumbaa V2.0, is on the way with significant updates (see table below). We're focused on the PCB layout now.
+
+The full schematic and PCB design files will be open-source after board functionalities have been verified.
+<div align="center">
+<img width="939" height="772" alt="Screenshot from 2025-10-22 21-40-16" src="https://github.com/user-attachments/assets/a8e6755d-4f7c-4694-8d74-cb5c3434906e" >
+</div>
+
+<div align="center">
+<img width="548" height="551" alt="Screenshot from 2025-10-22 21-15-46" src="https://github.com/user-attachments/assets/558afb4e-ee02-495b-87a8-64fb9bc38038" >
+</div>
+
 **Your support directly accelerates platform development:**
 
 We are committed to using the funds raised to:
