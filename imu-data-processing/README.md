@@ -9,8 +9,7 @@ Since the message sent out through the uart is with the standard MAVLink message
 
 Add a serial link in Qgroundstation and connect the IMU module via a serial-usb cable(In Pumbaa this cable is intergrated to the PCB.)  Open the **MAVlink Inspector** in **Analyse tools**, we can see the attitude message, heartbeat message and parameter messages sent from IMU.
 
-![MavLink inspector in Qgroundstation](image.png)
-
+![MavLink inspector in Qgroundstation](image-2.png)
 We can see the update frequency is degraded to around 100Hz.  I have not investigated this deeply, while it is potentially relevant with internal configuration of Qgroundstation.  Although, Qgroundstation is a convinent tool to check the mavlink from the serial interface.
 
 
@@ -23,9 +22,7 @@ msg = self.master.recv_match(type=['ATTITUDE'], blocking=False)
 Then the angles are converted to quaternion using scipy library and put in a 'PoseStamped' ROS2 message. Here the details are not given, since it requires lots of knowledge of Ubuntu/ROS2 and Python3.   I want to show that the converted ROS2 message can be viewed in  rviz2 or the command 'ros2 topic echo'. 
 
 ![use 'ros2 topic echo' to check](image-1.png)
-
-![Converted PoseStamped message in RVIZ2](image-2.png)
-
+![Converted PoseStamped message in RVIZ2](image.png)
 ## sum up
 The above conversion from Mavlink to ROS2 shows the advantage of sending out data from IMU with MAVLink library. You can use MAVROS library to help with the conversion, while it is designed for PX4 software stack. I perfer to decode and publish the ROS2 messages with own scripts, which are more flexible.
 
