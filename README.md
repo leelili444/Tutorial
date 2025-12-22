@@ -1,68 +1,22 @@
-# Getting Started
+## Getting Started
 
-## 📘 Overview: What This Tutorial Is For
+This is tutorial for MX_IMU_V1.0.  
+It is a fully open-source Inertial Measurement Unit (IMU) development board built around the STM32F405 processor, the ICM42688-P IMU sensor.
 
-This is the official documentation and tutorial for the MX Motion IMU. This project originated from a core necessity: the lack of a clean, focused, and fully open-source IMU development board. I built this IMU  for experienced engineers like me and those new learner to the field.
-This guide provides the essential documentation required to:
+It is highly suitable for experiment-oriented purposes, sensor fusion research, and prototype development. The package includes the schematic, PCB layout, firmware source code, and a Python MAVLink-based GUI.
 
-* **Quick Start**: The step-by-step process for immediate board activation and prototyping.
+## ⚙️ Key Specifications and Features
+![Hardware specification](image.png){width=50%}  
 
-* **Architectural Deep Dive**: A full breakdown of the software architecture, focusing on the IMU data pipeline and processing chain.
+![Software specification](image-1.png){width=50%}
 
 ## 🔗 Get Started and Start Building
 
 | Objective | Link |
 | :--- | :--- |
-| **Support Our Project** | **👉 Visit our [Kickstarter Project](https://www.kickstarter.com/projects/35546140/ready-to-innovate-imu-platform-for-prototyping-and-learning)** (Help us grow and expand) |
-| **Get Files** | 👉 Visit our **[GitHub Repo](https://github.com/leelili444/IMU)** (All open-source hardware and software files) |
-| **Start Learning** | 👉 Visit our **[Tutorial Documentation](https://mx-motion.gitbook.io/tutorial)** (Latest technical guides) |
-
-# Great news! 
-**Hakuna Matata!  The next version of our IMU, the Pumbaa V2.0 is coming soon!**  
-The next version of our IMU, the Pumbaa V2.0, is on the way with significant updates (see table below). We're focused on the PCB layout now.
-
-The full schematic and PCB design files will be open-source after board functionalities have been verified.
-<div align="center">
-<img width="939" height="772" alt="Screenshot from 2025-10-22 21-40-16" src="https://github.com/user-attachments/assets/a8e6755d-4f7c-4694-8d74-cb5c3434906e" >
-</div>
-
-<div align="center">
-<img width="548" height="551" alt="Screenshot from 2025-10-22 21-15-46" src="https://github.com/user-attachments/assets/558afb4e-ee02-495b-87a8-64fb9bc38038" >
-</div>
-
-**Your support directly accelerates platform development:**
-
-We are committed to using the funds raised to:
-* Refine Hardware Performance: Implement critical hardware optimizations (e.g., enhancing the CAN interface reliability).
-
-* Accelerate Library Expansion: Rapidly integrate and validate new attitude estimation algorithms.
-
-* Expand Practical Documentation: Develop production-ready tutorials and application guides for broader implementation.
-  
-
-## 🛠️ Born from Developer Frustration, Engineered for Efficiency
-
-Whether you're an **engineer, student, or seasoned maker**, you've faced the same challenge we have: searching for an ideal IMU development resource often ends in disappointment. I got tired of the time sinks and dead ends trying to make my own IMU work. That frustration was the reason I built the MX Motion IMU:
-
-* **Bloated Platforms:** The "open-source" boards I found were often a **functional grab-bag**, with the IMU becoming an insignificant component, making focused **learning and debugging** difficult.
-* **Black Box Design:** Critical **hardware design files were missing**, preventing deep understanding of the underlying principles and making it impossible to **customize or repurpose** the design.
-* **Coupled Code:** The software was **not clean or focused**, forcing hours of wasted time stripping out irrelevant functions instead of focusing on **application innovation**.
-
-I was tired of this inefficient cycle of reinventing the wheel. Since a **clean, complete, and purely IMU-focused** platform didn't exist, I built it for all fellow technical enthusiasts who crave **efficiency and depth**. (The IMU is shown as below)👇  
-![MX Motion MX](kickstarter_photo.jpg)
-
----
-
-## ✨ Our Commitment: 100% Open Source
-
-The **MX Motion IMU** is an integrated, high-efficiency platform engineered to minimize development overhead and accelerate IMU-based prototyping. It represents the **minimum viable solution** distilled from my own technical exploration.
-
-| Feature | Technical Focus |
-| :--- | :--- |
-| **Pure Design** | Hardware and software are strictly focused on the IMU, ensuring **zero unnecessary distractions**, making it ideal for learning attitude estimation and driver integration. |
-| **Deep Open Source** | We provide **full hardware design files (PCB/Schematics)** and a **clean, maintainable codebase**, eliminating the "black box" obstacle. |
-| **Rapid Integration** | The integrated hardware/software design lets you **skip low-level driver development** and immediately dedicate your effort to **algorithm optimization and application building**. |
-
-
-
+| **Support Our Project** | **👉 Visit our [Shop on Ebay](https://www.ebay.com/itm/127513085209)** |
+| **Hardware Design** | 👉 Visit our **[Hardware Repo](https://github.com/leelili444/Hardware)** (Schematics and PCB with KiCad) |
+| **IMU Firmware** | 👉 Visit our **[Firmware Repo](https://github.com/leelili444/imu_firmware)** (Source code with STM32CubeIDE) |
+| **Python GUI** | 👉 Visit our **[GUI Repo](https://github.com/leelili444/IMU_GUI)** (MAVLink GUI with Python) |
+| **Start Learning** | 👉 Visit our **[Tutorial Documentation](https://mx-motion.gitbook.io/tutorial)** (Tutorial for MX_IMU_V1.0) |
 
