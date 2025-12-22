@@ -6,9 +6,9 @@ It is a fully open-source Inertial Measurement Unit (IMU) development board buil
 It is highly suitable for experiment-oriented purposes, sensor fusion research, and prototype development. The package includes the schematic, PCB layout, firmware source code, and a Python MAVLink-based GUI.
 
 ## ⚙️ Key Specifications and Features
-![Hardware specification](image.png){width=50%}  
+![Hardware specification](image.png)
 
-![Software specification](image-1.png){width=50%}
+![Software specification](image-1.png)
 
 ## 🔗 Get Started and Start Building
 
