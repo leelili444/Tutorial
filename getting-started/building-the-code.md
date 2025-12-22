@@ -10,4 +10,4 @@
 * Click menu "Run->Debug" will launch the Debug mode.
 * Click menu "Run->Run" will build and upload the firmware via ST-Link. 
 
-![Opened MX Motion Project in STM32CubeIDE](image-3.png)
+![Opened MX Motion Project in STM32CubeIDE](image-5.png)

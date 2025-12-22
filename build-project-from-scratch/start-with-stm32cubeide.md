@@ -17,10 +17,10 @@ Now you can configure the MCU as per the [imu schematic](https://github.com/leel
 The first tab in the Device Configureation tool is the 'Pin out and configuration' of MCU. Some essential pins and peripherals used in the IMU board will be configured in the following steps.
 ![Device configuration tool](image-2.png)
 ### Clock configuration
-There is a external clock in the form of a 16MHz crystal oscillator on the IMU board, which is a  
-connected across pin5 and pin6, which are the input pin and output pin of external oscillator.    
+There is a external clock in the form of a 8MHz active crystal oscillator on the IMU board, which is a  
+connected with pin5, which are the input pin to connect with external oscillator.    
 
-![connection Between the Crystal Oscillator and Processor](image-3.png)
+![connection Between the Crystal Oscillator and Processor](image-3.png)  
 ![OSC_in and OSC_out](image-4.png)
 * RCC Mode and Configuration
   * In the Device Configuration Tool, expand the 'System Core' section and choose the 'RCC' (Reset and Clock Controller) peripheral.
@@ -37,22 +37,10 @@ connected across pin5 and pin6, which are the input pin and output pin of extern
 
 | Timer | Type | Connected Bus | Timer Frequency Used |
 | :---: | :---: | :---: | :---: |
-| TIM1 | Advanced-control Timer | APB2 | 168 MHz |
-| TIM2 | General-purpose Timer | APB1 | 84 MHz |
-| TIM3 | General-purpose Timer | APB1 | 84 MHz |
+| TIM1, TIM8 | Advanced-control Timer | APB2 | 168 MHz |
 
-![Timers-1](image-7.png)
-![Timers-2](image-8.png)
+![Timer-1 and Timer-8](image-7.png)
 
-### GPIO Configuration
-Two red LEDs are connected to PB4 and PB5 pins.  Go to the 'Pinout & Configuration' tab and click on the 'PB4' pin and set it as 'GPIO_Output' to drive the LED. Do the same setting to PB5 pin. Then Click the GPIO section on the left side under 'System Core' and you can find the two pins are list in a table. There you can assign meaningful user lable to the pins seperately.
-![Set GPIO for LEDs](image-9.png)
-
-When the project code is generated, these two pins will be defined in 'main.h' as below.
-| User Label | Pin | Port Definition | Pin Definition |
-| :---: | :---: | :---: | :---: |
-| **LED1** | PB4 | `LED1_GPIO_Port` (which is GPIOB) | **`Status_LED_1_Pin`** (which is GPIO_PIN_4) |
-| **LED2** | PB5 | `LED2_GPIO_Port` (which is GPIOB) | **`Status_LED_2_Pin`** (which is GPIO_PIN_5) |
 
 ### SWD Configuration
 MX Motion IMU uses Stlink for code debugging.Enable SWD as follows: 
@@ -71,8 +59,7 @@ MX Motion IMU uses Stlink for code debugging.Enable SWD as follows:
   ![Default task](image-13.png)
 
 ## Code Generation
-Press 'ctrl + S' to save the 'Device Configuration Tool', and the IDE will start to generate the code. The project explorer looks like:  
-![Generated code](image-14.png)
+Press 'ctrl + S' to save the 'Device Configuration Tool', and the IDE will start to generate the code. 
 
 We will look into the code more next time and build the first FreeRTOS task for IMU board.
   

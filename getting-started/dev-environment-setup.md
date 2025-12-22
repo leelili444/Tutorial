@@ -33,5 +33,9 @@ description: Essential software
 
 ## Source code management
 * install [Github Desktop](https://desktop.github.com/download/)
-* download code from [MX Motion IMU repo](https://github.com/leelili444/IMU)
+* download code from [MX Motion Firmware repo](https://github.com/leelili444/imu_firmware)
   
+## Online manuals
+We mainly need the following manuals:
+* [STM32F405RGT6](https://www.st.com/resource/en/datasheet/dm00037051.pdf)
+* [ICM42688-P](https://invensense.tdk.com/download-pdf/icm-42688-p-datasheet/)

@@ -42,12 +42,9 @@ we have five GPIOs need to set, **CubeMX** has set three of them:
 ![Pins set by CubeMX](image/sensor-initialization/1759983361205.png)
 
 CS and INIT pins are left to us.
-CS Pin is labeled with `GYRO_CS` which is PC4 pin. Configure it as a regular GPIO output, and ensure that the software can manually pull it low and high.
+CS Pin is labeled with `GYRO_CS` which is PB0 pin. Configure it as a regular GPIO output, and ensure that the software can manually pull it low and high.
 
-INT Pin is labeled with 'GYRO_INI1' which is PB0. Configure it as an external interrupt (EXTI) to efficiently handle data-ready notifications.  
-![Five pins connected to STM32](image/sensor-initialization/1759983297843.png)
-![GPIO lists so far](image/sensor-initialization/1759984504869.png)
-
+INT Pin is labeled with 'GYRO_INI1' which is PA4. Configure it as an external interrupt (EXTI) to efficiently handle data-ready notifications.  
 
 # Writing Communication Functions for IMU
 We should be able to write a set of abstracted low-level read/write functions.
@@ -127,8 +124,8 @@ If CS toggles incorrectly, the IMU will misinterpret the command or return corru
 Define function-like macros to control CS signal in `ICM42688P.h`. They act similarly to function calls, but they are implemented as text substitution, which avoids the overhead of a function call (such as stack operations). 
 
 ```
-#define Icm_CS_HIGH() HAL_GPIO_WritePin(GPIOC, GPIO_PIN_4, GPIO_PIN_SET)
-#define Icm_CS_LOW()  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_4, GPIO_PIN_RESET)
+#define Icm_CS_HIGH() HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET)
+#define Icm_CS_LOW()  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET)
 ```
 
 ### Implement hal_Spi1_ReadWriteByte()

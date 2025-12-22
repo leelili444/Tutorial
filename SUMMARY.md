@@ -1,16 +1,12 @@
 # Table of contents
 
 * [Getting Started](README.md)
-  * [Hardware specification](getting-started/hardware-specification.md)
   * [Dev environment setup](getting-started/dev-environment-setup.md)
   * [Building the code](getting-started/building-the-code.md)
   * [MX Motion GUI](getting-started/mx-motion-gui.md)
 * [Build project from scratch](build-project-from-scratch/README.md)
   * [Start with stm32CubeIDE](build-project-from-scratch/start-with-stm32cubeide.md)
   * [First task with FreeRTOS](build-project-from-scratch/first-task-with-freertos.md)
-* [EEPROM Operations](EEPROM-Operations/README.mdREADME.md)
-  * [I2C Configuration](EEPROM-Operations/i2c-configuration.md)
-  * [EEPROM Test via I2C](EEPROM-Operations/How_to_Test_AT24C256_EEPROM_via_I2C_on_STM32.md)
 * [IMU data collection](imu-data-collection/README.md)
   * [Sensor Initialization](imu-data-collection/sensor-initialization.md)
   * [Sensor Configuration](imu-data-collection/sensor-configuration.md)
