@@ -1,6 +1,3 @@
----
-description: IMU data processing- attitude estimation and serial transmission
----
 ## Overview
 Purpose: read IMU (ICM42688P) → compute attitude (AHRS) → pack and send telemetry frames  via UART DMA.
 
