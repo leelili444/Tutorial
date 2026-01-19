@@ -16,6 +16,8 @@ git checkout App_Julia
 ```
 This system is a high-performance IMU real-time monitor and data acquisition client implemented in Julia. It is designed for high-rate serial data and balances UI responsiveness with preservation of raw hardware data.
 
+![GUI using Julia](image-3.png)
+
 ---
 
 ## 1. Overall Architecture
@@ -101,5 +103,6 @@ For high-rate streams at 921600 bps, the system relies on the following system-l
 * **Serial port setup**: Ensure the serial port is configured with `stty` and `setserial` commands in [serial configuration](#33-hardware-communication-tuning-linux-serial-tuning)before launching the GUI for optimal performance.
 * **Safe shutdown**: Always click the `Stop` button to end recording so that disk buffers are fully flushed to the CSV file.
 * **Calibration requirement**: When clicking `Calibrate`, ensure the IMU is level and stationary.
+* **Default foler for data log** : The default folder for saving data logs is `./data_logs/`. Make sure this folder exists or modify the path `save_dir` in the `CONFIG` block.
 
 
