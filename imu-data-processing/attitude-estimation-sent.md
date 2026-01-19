@@ -27,7 +27,7 @@ Responsibilities
 
 Key excerpt (from `Core/Src/ins_task.c`):
 
-```c
+```
 void InitializePose(void){
     FusionOffsetInitialise(&offset, SAMPLE_RATE);
     FusionAhrsInitialise(&ahrs);
@@ -70,7 +70,7 @@ Responsibilities
 
 Key excerpts (from `Core/Src/mav_task.c`):
 
-```c
+```
 void Telemetry_Send(ICM42688P_Data_t* imudata, FusionEuler* euler) {
     if (dma_ready == 0) return;
     IMU_Frame_t *p_pkt = &tx_buffers[active_buf_idx];
@@ -90,7 +90,7 @@ void Telemetry_Send(ICM42688P_Data_t* imudata, FusionEuler* euler) {
 
 Periodic task loop snapshot:
 
-```c
+```
 void mavlinkTask(void *argument) {
     TickType_t xLastWakeTime = xTaskGetTickCount();
     const TickType_t xFrequency = pdMS_TO_TICKS(2); // ~2ms
@@ -118,7 +118,7 @@ Notes
 
 SPI DMA complete ISR decodes sample and notifies INS task:
 
-```c
+```
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi) {
   if (hspi->Instance == SPI1) {
     Icm_CS_HIGH();
@@ -134,7 +134,7 @@ void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi) {
 
 UART TX complete should release DMA flag:
 
-```c
+```
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) {
     if (huart->Instance == USART1) {
         dma_ready = 1;
