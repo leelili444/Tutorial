@@ -1,8 +1,8 @@
 ---
-description: Basics of IMU data and attitude estimation
+description: Basics of IMU data and attitude estimation  
 ---
 
-## Overview
+# Overview
 This document summarizes the physical meaning of typical IMU signals (with notes for the ICM42688P), and outlines common, practical methods for computing attitude (orientation) from IMU data. It focuses on basics and engineering tips useful when implementing AHRS on embedded systems.
 
 ---

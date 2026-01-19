@@ -1,7 +1,8 @@
 ---
 description: flow of IMU data to attitude estimation and telemetry transmission
 ---
-## Overview
+
+# Overview
 Purpose: read IMU (ICM42688P) → compute attitude (AHRS) → pack and send telemetry frames  via UART DMA.
 
 Main files
