@@ -14,7 +14,7 @@
   * [Data receiving](imu-data-collection/data-receiving.md)
 * [IMU data processing](imu-data-processing/README.md)
   * [Basic of IMU data](imu-data-processing/basic-of-imu-data.md)
-  * [Attitude Estimation and Sent](imu-data-processing/attitude-estimation-sent-by-serial.md)
+  * [Attitude Estimation and Sent](imu-data-processing/attitude-estimation-sent.md)
 * [MAVLink integration](mavlink-integration/README.md)
   * [Sending messages](mavlink-integration/sending-messages.md)
   * [Parameters tunning](mavlink-integration/parameters-tunning.md)
