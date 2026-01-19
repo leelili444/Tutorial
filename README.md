@@ -17,6 +17,6 @@ It is highly suitable for experiment-oriented purposes, sensor fusion research, 
 | **Support Our Project** | **👉 Visit our [Shop on Ebay](https://www.ebay.com/itm/127513085209)** |
 | **Hardware Design** | 👉 Visit our **[Hardware Repo](https://github.com/leelili444/Hardware)** (Schematics and PCB with KiCad) |
 | **IMU Firmware** | 👉 Visit our **[Firmware Repo](https://github.com/leelili444/imu_firmware)** (Source code with STM32CubeIDE) |
-| **Python GUI** | 👉 Visit our **[GUI Repo](https://github.com/leelili444/IMU_GUI)** (MAVLink GUI with Python) |
+| **IMU GUI** | 👉 Visit our **[GUI Repo](https://github.com/leelili444/IMU_GUI)** (GUI with Julia) |
 | **Start Learning** | 👉 Visit our **[Tutorial Documentation](https://mx-motion.gitbook.io/tutorial)** (Tutorial for MX_IMU_V1.0) |
 

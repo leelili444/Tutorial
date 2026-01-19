@@ -1,8 +1,11 @@
 ---
-description: Setup and code structure.
+description: Setup and code structure of App_Python.
 ---
 
-# MX Motion GUI
+# MX Motion GUI using Python PyQt6 and MAVLink
+This GUI is developed using Python PyQt6 framework and MAVLink protocol to communicate with IMU. The GUI provides real-time data monitoring, data logging and online parameter tunning functions.
+The GUI is on the branch "App_Python" in the repo [IMU_GUI](https://github.com/leelili444/IMU_GUI)
+
 ## Main feature
 * **Real-time data monitor**  
   Receiving MAVLink messages sent from IMU, such as heartbeat, attitude or raw imu data.
@@ -16,12 +19,18 @@ description: Setup and code structure.
 * Start "Anaconda Navigator"
 * Launch "PyCharm"  
 * Open GUI folder in PyCharm  
-  GUI folder is "IMU\gcsV1.0_EN"
+  GUI folder is "IMU_GUI", which can be downloaded from the branch App_Python
+    ```
+    git clone https://github.com/leelili444/IMU_GUI.git
+    ```
+    Checkout App_Python
+    ```
+    cd IMU_GUI
+    git checkout App_Python
+    ```
 * Open main.py
 * Push down"Shift + fn + F10" to run "main.py"  
   The GUI will pop up.
-
-  ![Open GUI in PyCharm IDE](image-1.png)
 
 ## Code folder structure
 | File Name | Extension | Type/Purpose | Analysis |
