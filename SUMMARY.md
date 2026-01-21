@@ -12,6 +12,7 @@
   * [Sensor Initialization](imu-data-collection/sensor-initialization.md)
   * [Sensor Configuration](imu-data-collection/sensor-configuration.md)
   * [Data receiving](imu-data-collection/data-receiving.md)
+  * [Enabling external CLKIN for ICM42688P](imu-data-collection/external-clkin-for-imu.md)
 * [IMU data processing](imu-data-processing/README.md)
   * [Basic of IMU data](imu-data-processing/basic-of-imu-data.md)
   * [Attitude Estimation and Sent](imu-data-processing/attitude-estimation-sent.md)

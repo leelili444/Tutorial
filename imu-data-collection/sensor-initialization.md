@@ -270,7 +270,5 @@ The definitions of different register address of ICM42688P should be given in he
 ![Change the value format](image/sensor-initialization/1760001296404.png)
 ![Device ID](image/sensor-initialization/1760000411507.png) 
 
-## Wrap up
-Next time, we will disucss more about the sensor configuration and details in the above initialization function. 
 
-After we finish all the initialization, the project so far will be accessed on our repo.
+With the correct device ID read from the WHO_AM_I register, we have confirmed that the SPI communication between the STM32 and the ICM-42688-P is functioning properly. This verification step is crucial before proceeding with further sensor configuration and data acquisition.
