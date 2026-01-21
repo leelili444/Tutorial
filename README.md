@@ -1,3 +1,8 @@
+## MX_IMU community On zulip
+Join our community for discussions, support, and collaboration:  
+https://mxmotion.zulipchat.com/
+
+It is undergoing development, and we welcome contributions from the community.
 ## Getting Started
 
 This is tutorial for MX_IMU_V1.0.  
