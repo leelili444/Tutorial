@@ -62,5 +62,6 @@ This verification method effectively demonstrates the impact of using an externa
 - [ ] Read back `INTF_CONFIG1` and verify bits set.
 - [ ] Check dt with PB11 ON/OFF to confirm behavior.
 
-The code is on the new branch called 'AdvancedFeatures' in our repo
+Currently, the external clock feature is optional and can be enabled/disabled by setting 'use_external_clk'. You need to power cycle the board after changing this setting to see the effect.
 
+More elegant runtime switching may be implemented in the future.
