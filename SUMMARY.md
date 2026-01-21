@@ -18,4 +18,4 @@
   * [Attitude Estimation and Sent](imu-data-processing/attitude-estimation-sent.md)
 * [Betaflight MSP v2 integration](Betaflight-MSP-integration/README.md)
   * [MSP integration](Betaflight-MSP-integration/MSP-integration.md)
-  * [Parameters saving onboard via MSP v2](Betaflight-MSP-integration/Parameters-saving-onboard.md)
+  * [Parameters saving onboard](Betaflight-MSP-integration/Parameters-saving-onboard.md)
